@@ -1,0 +1,36 @@
+{
+  "name": "myapplication",
+  "version": "1.0.0",
+  "description": "final project",
+  "main": "index.js",
+  "scripts": {
+    "serve:dev": "NODE_ENV=production webpack-dev-server --mode=development",
+    "build:dev": "NODE_ENV=development webpack --mode=development",
+    "build:prod": "NODE_ENV=production webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelasquirchuk/myApplication.git"
+  },
+  "keywords": [
+    "fp"
+  ],
+  "author": "mcfiretruck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikaelasquirchuk/myApplication/issues"
+  },
+  "homepage": "https://github.com/mikaelasquirchuk/myApplication#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "dotenv-webpack": "^1.5.5"
+  }
+}
