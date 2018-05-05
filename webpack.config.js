@@ -1,4 +1,4 @@
-const Dotenv = require("dotenv-webpack");
+const Dotenv = require("./node_modules/dotenv-webpack");
 
 const config = {
     entry: ["./app/js/index.js"],
@@ -13,6 +13,11 @@ const config = {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           loaders: ["babel-loader"]
+        },
+        {
+          test:/\.css$/,
+          exclude: /node_modules/,
+          use:["style-loader","css-loader"]
         }
       ]
     },

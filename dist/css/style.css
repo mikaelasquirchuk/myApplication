@@ -1,0 +1,29 @@
+html,body {
+    background:#16161f;
+}
+
+#the-guardian {
+    font-family:"Merriweather",serif;
+    font-size:15px;
+    color:white;
+    width:40%;
+    background:grey;
+    min-height:500px;
+    padding:10px;
+    border-radius:10px;
+}
+
+#the-guardian>h3 {
+    font-size:20px;
+}
+
+#guardian-output>ul>a:-webkit-any-link {
+    color:white;
+    padding:1px;
+}
+
+#guardian-output>ul {
+    list-style-type: none;
+    margin-left:0;
+    padding-left:0;
+}

@@ -1,6 +1,3 @@
-console.log(process.env.API_KEY);
+const guardianAPI = require("./guardianAPI");
 
-const apiCalls = require("./apiCalls");
-
-console.log(apiCalls);
-
+console.log(guardianAPI.logResults());
