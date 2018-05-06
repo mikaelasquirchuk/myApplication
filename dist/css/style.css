@@ -19,11 +19,16 @@ html,body {
 
 #guardian-output>ul>a:-webkit-any-link {
     color:white;
-    padding:1px;
 }
 
 #guardian-output>ul {
     list-style-type: none;
     margin-left:0;
     padding-left:0;
+}
+
+@media (max-width: 900px) {
+    #the-guardian {
+        width:100%;
+    }
 }
