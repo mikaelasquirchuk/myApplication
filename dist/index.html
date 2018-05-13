@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>myApplication</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 <body>
-    <div id="the-guardian">
-        <h3>The Guardian</h3>
-        <div id="guardian-output"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="the-guardian" class="col-sm">
+                <h3>The Guardian</h3>
+                <div id="guardian-section">
+                    <select id="guardian-section-dropdown"></select>
+                    <button id="guardian-section-button">go</button>
+                </div>
+                <div id="guardian-output"></div>
+            </div>
+            <div class="col-sm middle-column">
+                <div class="half-height">
+                    <h1>Hello world</h1>
+                    <div id="current-time"></div>
+                </div>
+            </div>
+            <div class="col-sm"></div>
+        </div>
     </div>
     <script src="/bundle.js"></script>
 </body>
