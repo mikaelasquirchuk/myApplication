@@ -1,85 +1,97 @@
-html, body {
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    min-height:100%; 
-    height:100%; 
+html,
+body {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100%;
+  height: 100%;
 }
 h1 {
-    font-family:"Amatic SC",serif !important;
-    font-size:90px!important;
-    text-align:center;
-    font-weight:1000 !important;;
+  font-family: "Amatic SC", serif !important;
+  font-size: 90px !important;
+  text-align: center;
+  font-weight: 1000 !important;
 }
 #current-time {
-    font-family:"Amatic SC",serif !important;
-    font-size:70px!important;
-    text-align:center;
-    font-weight:1000 !important;;
+  font-family: "Amatic SC", serif !important;
+  font-size: 70px !important;
+  text-align: center;
+  font-weight: 1000 !important;
 }
 #the-guardian {
-    font-family:"Merriweather",serif;
-    font-size:16px;
-    color:white;
-    background:#16161d;
-    min-height:96%;
-    padding:0;
-    margin:2%;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  color: white;
+  background: #16161d;
+  min-height: 96%;
+  padding: 0;
+  margin: 2%;
 }
 
-#the-guardian>h3 {
-    font-size:24px;
-    padding:10px 10px 10px 10px;
+#the-guardian > h3 {
+  font-size: 24px;
+  padding: 10px 10px 10px 10px;
 }
 
-#guardian-output>ul>a:-webkit-any-link {
-    color:white;
+#guardian-output > ul > a:-webkit-any-link {
+  color: white;
 }
 
-#guardian-output>ul {
-    list-style-type: none;
-    margin:0;
-    padding: 0;
+#guardian-output > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-#guardian-output>ul>a>li {
-    width:96%;
-    background-color:white;
-    color:black;
-    margin:10px 2%;
-    padding:2%;
+#guardian-output > ul > a > li {
+  width: 96%;
+  background-color: white;
+  color: black;
+  margin: 10px 2%;
+  padding: 2%;
 }
-#guardian-output>ul>a>li:hover {
-    text-decoration:underline;
+#guardian-output > ul > a > li:hover {
+  text-decoration: underline;
 }
 
 #guardian-section-dropdown {
-    width:80%;
-    border-radius:0;
-    border:none;
-    -webkit-appearance: none;
-    padding:2%;
+  width: 80%;
+  border-radius: 0;
+  border: none;
+  -webkit-appearance: none;
+  padding: 2%;
 }
 
 #guardian-section-button {
-    border-radius:0;
-    border:none;
-    -webkit-appearance: none;
-    padding:2%;
-    width:18%;
-
+  border-radius: 0;
+  border: none;
+  -webkit-appearance: none;
+  padding: 2%;
+  width: 18%;
 }
 
 #guardian-section {
-    margin:10px 2%;
+  margin: 10px 2%;
 }
 
-.container-fluid, .row {
-    min-height:100%;
+.container-fluid,
+.row {
+  min-height: 100%;
 }
 
-.middle-column {
-    margin:2%;
+.middle-column,
+.right-column {
+  margin: 2%;
 }
 
 .half-height {
-    background:white;
+  background: white;
+}
+
+#change-background {
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+  border: none;
+  bottom: 0;
+  right: 0;
+  background-color: red;
 }
