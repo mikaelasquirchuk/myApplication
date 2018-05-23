@@ -32,6 +32,19 @@ h1 {
   padding: 10px 10px 10px 10px;
 }
 
+#weather-container > h3 {
+  font-size: 24px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Lobster Two", serif !important;
+}
+
+#to-do-list-output > h3 {
+  font-size: 24px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Poiret One", serif !important;
+  color: white;
+}
+
 #guardian-output > ul > a:-webkit-any-link {
   color: white;
 }
@@ -84,14 +97,26 @@ h1 {
 
 .half-height {
   background: white;
+  margin-bottom: 10px;
 }
 
 #change-background {
-  width: 40px;
+  width: 100%;
   height: 40px;
   box-shadow: none;
   border: none;
   bottom: 0;
   right: 0;
-  background-color: red;
+  background-color: #16161d;
+  font-family: "Audiowide", sans-serif;
+  color: white;
+}
+
+#weather-container {
+  min-height: 300px;
+}
+
+#to-do-list-output {
+  min-height: 500px;
+  background-color: #16161d;
 }

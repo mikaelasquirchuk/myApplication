@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>myApplication</title>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster+Two|Merriweather|Poiret+One|Audiowide" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
@@ -27,9 +27,18 @@
                     <h1>Hello world</h1>
                     <div id="current-time"></div>
                 </div>
+                <div class="half-height" id="weather-container">
+                    <h3>Weather:
+                        <span id="current-location">Current Location</span>
+                    </h3>
+                    <div id="current-weather"></div>
+                </div>
             </div>
             <div class="col-sm right-column">
-                <button id="change-background"></button>
+                <div class="half-height" id="to-do-list-output">
+                    <h3>To - do</h3>
+                </div>
+                <button id="change-background">change background</button>
             </div>
         </div>
     </div>
