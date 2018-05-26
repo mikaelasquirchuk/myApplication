@@ -1,33 +1,30 @@
-const weatherBaseURL = `https://api.darksky.net/forecast/`;
+const weatherBaseURL = `https://api.darksky.net/forecast`;
 const APIString = process.env.API_KEY3;
 
-const weatherURL = `${weatherBaseURL}${APIString}/${location}`;
+const currentLocationSpan = document.querySelector("#current-location");
 
-// const getWeather = function() {
-//   if (navigator.geolocation) {
-//     navigator.geolocation.getCurrentPosition(
-//       console.log(`${position.coords.latitude},${position.coords.longitude}`)
-//     );
-//   } else {
-//     alert("Geolocation is not supported by this browser.");
-//   }
-// };
-
-let location = 0;
+let currentLocation = 0;
 function getLocation() {
   if (navigator.geolocation) {
-    location = navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.getCurrentPosition(showPosition);
   } else {
     alert("Geolocation is not supported by this browser.");
   }
 }
 function showPosition(position) {
-  return `${position.coords.latitude},${position.coords.longitude}`;
+  let latitude = Math.round(position.coords.latitude * 10000) / 10000;
+  let longitude = Math.round(position.coords.longitude * 10000) / 10000;
+  currentLocation = `${latitude},${longitude}`;
+  let weatherURL = `${weatherBaseURL}/${APIString}/${currentLocation}`;
+  fetch(weatherURL, { mode: "no-cors" })
+    .then(response => response.json())
+    .then(function(data) {
+      console.log(data);
+    });
 }
 
-function getWeather() {
-  console.log(location);
-}
+function getWeather() {}
+
 module.exports = {
   getLocation: getLocation,
   getWeather: getWeather

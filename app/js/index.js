@@ -19,4 +19,4 @@ const pageLoad = require("./Interface");
 setInterval(pageLoad.getCurrentTime, 1000);
 
 const getWeather = require("./Weather");
-getWeather.getWeather();
+getWeather.getLocation();
